@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Documentación QA Manual de NexoTech Store: requerimientos, plan de pruebas, casos, ejecución, métricas, evidencias y Jira Scrum.">
+  <title>QA Manual - NexoTech Store</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar container" aria-label="Navegación principal">
+      <a class="brand" href="index.html"><span>QA</span> NexoTech Store</a>
+      <div class="nav-actions">
+        <a href="#documentacion">Documentación</a>
+        <a href="#evidencias">Evidencias</a>
+        <a href="#scrum">Scrum</a>
+      </div>
+    </nav>
+
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="badge">QA Manual · Testing funcional · Jira Scrum</div>
+        <h1>Documentación de pruebas manuales</h1>
+        <p class="lead">Análisis funcional, plan de pruebas, casos de prueba, ejecución, observaciones, métricas y evidencias sobre una tienda online de tecnología.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://leanfed.github.io/Nexo-tech-store/" target="_blank" rel="noreferrer">Ver aplicación evaluada</a>
+          <a class="btn secondary" href="#evidencias">Ver evidencias</a>
+          <a class="btn secondary" href="03-casos-de-prueba.md">Casos de prueba</a>
+        </div>
+      </div>
+      <aside class="panel kpi-panel" aria-label="Indicadores principales del proyecto">
+        <div class="kpi"><strong>26</strong><span>Casos de prueba</span></div>
+        <div class="kpi"><strong>10</strong><span>Historias de usuario</span></div>
+        <div class="kpi"><strong>5</strong><span>Épicas</span></div>
+        <div class="kpi"><strong>3</strong><span>Sprints</span></div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="section compact">
+      <div class="container summary-strip">
+        <article>
+          <span class="eyebrow">Aplicación bajo prueba</span>
+          <strong>NexoTech Store</strong>
+          <p>E-commerce frontend con catálogo, carrito, panel administrador y persistencia en LocalStorage.</p>
+        </article>
+        <article>
+          <span class="eyebrow">Resultado general</span>
+          <strong>Flujos principales validados</strong>
+          <p>Se documentaron observaciones técnicas asociadas al alcance frontend.</p>
+        </article>
+        <article>
+          <span class="eyebrow">Gestión</span>
+          <strong>Jira Scrum</strong>
+          <p>El tablero real puede requerir acceso. Las capturas quedan disponibles en este informe.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="alcance">
+      <div class="container">
+        <div class="section-title">
+          <h2>Alcance validado</h2>
+          <span class="muted">Testing funcional · Responsive · LocalStorage</span>
+        </div>
+        <div class="grid cards-3">
+          <article class="card"><h3>Catálogo y navegación</h3><p>Validación de home, productos, búsqueda, filtros, detalle de producto, navegación e imágenes alternativas.</p></article>
+          <article class="card"><h3>Carrito</h3><p>Validación de agregado de productos, modificación de cantidades, eliminación, vaciado y persistencia con LocalStorage.</p></article>
+          <article class="card"><h3>Panel administrador</h3><p>Validación de acceso administrador, alta, edición, eliminación y restauración del catálogo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="documentacion">
+      <div class="container">
+        <div class="section-title"><h2>Artefactos QA</h2><span class="status">Documentado</span></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Documento</th><th>Contenido</th><th>Archivo</th></tr></thead>
+            <tbody>
+              <tr><td>Resumen ejecutivo</td><td>Síntesis del alcance, objetivo y resultado general.</td><td><a href="00-resumen-ejecutivo.md">00-resumen-ejecutivo.md</a></td></tr>
+              <tr><td>Requerimientos</td><td>Requerimientos funcionales y no funcionales.</td><td><a href="01-requerimientos.md">01-requerimientos.md</a></td></tr>
+              <tr><td>Plan de pruebas</td><td>Objetivo, alcance, ambiente, riesgos y criterios.</td><td><a href="02-plan-de-pruebas.md">02-plan-de-pruebas.md</a></td></tr>
+              <tr><td>Casos de prueba</td><td>26 casos funcionales manuales.</td><td><a href="03-casos-de-prueba.md">03-casos-de-prueba.md</a></td></tr>
+              <tr><td>Ejecución</td><td>Resultado de ejecución documentado.</td><td><a href="04-ejecucion.md">04-ejecucion.md</a></td></tr>
+              <tr><td>Observaciones</td><td>Limitaciones y mejoras detectadas.</td><td><a href="05-defectos-observaciones.md">05-defectos-observaciones.md</a></td></tr>
+              <tr><td>Métricas</td><td>Indicadores del ciclo QA.</td><td><a href="06-metricas.md">06-metricas.md</a></td></tr>
+              <tr><td>Trazabilidad</td><td>Relación entre épicas, historias y casos.</td><td><a href="08-trazabilidad.md">08-trazabilidad.md</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section highlight" id="evidencias">
+      <div class="container">
+        <div class="section-title">
+          <h2>Evidencias visuales</h2>
+          <span class="muted">Capturas incluidas en el repositorio</span>
+        </div>
+        <p class="section-lead">Las capturas permiten consultar el trabajo sin depender del acceso al tablero Jira. El tablero real puede requerir permisos de Atlassian.</p>
+
+        <h3 class="subheading">Aplicación evaluada</h3>
+        <div class="evidence-grid">
+          <a class="evidence-card" href="evidencias/nexotech-productos.png" target="_blank">
+            <img src="evidencias/nexotech-productos.png" alt="Vista de productos de NexoTech Store">
+            <span>Catálogo de productos</span>
+          </a>
+          <a class="evidence-card" href="evidencias/nexotech-carrito.png" target="_blank">
+            <img src="evidencias/nexotech-carrito.png" alt="Carrito de compras de NexoTech Store">
+            <span>Carrito de compras</span>
+          </a>
+          <a class="evidence-card" href="evidencias/nexotech-admin.png" target="_blank">
+            <img src="evidencias/nexotech-admin.png" alt="Panel administrador de NexoTech Store">
+            <span>Panel administrador</span>
+          </a>
+        </div>
+
+        <h3 class="subheading">Gestión en Jira Scrum</h3>
+        <div class="evidence-grid jira-gallery">
+          <a class="evidence-card wide" href="evidencias/jira-resumen-estado.png" target="_blank">
+            <img src="evidencias/jira-resumen-estado.png" alt="Resumen de estado e informes en Jira">
+            <span>Resumen, informes y actividad reciente</span>
+          </a>
+          <a class="evidence-card wide" href="evidencias/jira-sprint-historia-detalle.png" target="_blank">
+            <img src="evidencias/jira-sprint-historia-detalle.png" alt="Sprint y detalle de una historia de usuario en Jira">
+            <span>Sprint 1 y detalle de historia de usuario</span>
+          </a>
+          <a class="evidence-card wide" href="evidencias/jira-cronograma-epicas.png" target="_blank">
+            <img src="evidencias/jira-cronograma-epicas.png" alt="Cronograma de épicas en Jira">
+            <span>Cronograma de épicas</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="scrum">
+      <div class="container">
+        <div class="section-title"><h2>Plan Scrum</h2><span class="muted">3 sprints</span></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Sprint</th><th>Objetivo</th><th>Actividades principales</th></tr></thead>
+            <tbody>
+              <tr><td>Sprint 1</td><td>Planificación QA y catálogo.</td><td>QA-001 a QA-003, US-001 a US-004, CP-001 a CP-010, CP-023, CP-024</td></tr>
+              <tr><td>Sprint 2</td><td>Carrito y persistencia local.</td><td>QA-004, US-005 a US-008, CP-011 a CP-017, OBS-002</td></tr>
+              <tr><td>Sprint 3</td><td>Admin, responsive y cierre QA.</td><td>QA-005, US-009, US-010, CP-018 a CP-022, CP-025, CP-026, OBS-001, OBS-003</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note">
+          <strong>Nota:</strong> Jira se utilizó como herramienta de gestión del trabajo QA. El acceso directo al tablero puede requerir permisos; las evidencias principales están disponibles en esta página.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <span>Autor: Federico Sosa</span>
+      <span>QA Manual - NexoTech Store</span>
+    </div>
+  </footer>
+</body>
+</html>
