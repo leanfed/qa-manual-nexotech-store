@@ -3,16 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Documentación QA Manual de NexoTech Store: requerimientos, plan de pruebas, casos, ejecución, métricas, evidencias y Jira Scrum.">
+  <meta name="description" content="Documentación QA Manual de NexoTech Store: requerimientos, plan de pruebas, casos de prueba, ejecución, métricas, evidencias y gestión Scrum en Jira.">
   <title>QA Manual - NexoTech Store</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header class="hero">
+  <header class="hero" id="inicio">
     <nav class="topbar container" aria-label="Navegación principal">
-      <a class="brand" href="index.html"><span>QA</span> NexoTech Store</a>
+      <a class="brand" href="#inicio"><span>QA</span> NexoTech Store</a>
+      <button class="menu-button" type="button" aria-label="Navegación">☰</button>
       <div class="nav-actions">
-        <a href="#documentacion">Documentación</a>
+        <a href="#artefactos">Artefactos</a>
+        <a href="#casos">Casos</a>
+        <a href="#ejecucion">Ejecución</a>
         <a href="#evidencias">Evidencias</a>
         <a href="#scrum">Scrum</a>
       </div>
@@ -22,18 +25,18 @@
       <div class="hero-copy">
         <div class="badge">QA Manual · Testing funcional · Jira Scrum</div>
         <h1>Documentación de pruebas manuales</h1>
-        <p class="lead">Análisis funcional, plan de pruebas, casos de prueba, ejecución, observaciones, métricas y evidencias sobre una tienda online de tecnología.</p>
+        <p class="lead">Análisis funcional sobre NexoTech Store, una tienda online de tecnología. El trabajo incluye requerimientos, plan de pruebas, casos manuales, ejecución, observaciones, métricas, evidencias y gestión Scrum.</p>
         <div class="actions">
           <a class="btn primary" href="https://leanfed.github.io/Nexo-tech-store/" target="_blank" rel="noreferrer">Ver aplicación evaluada</a>
+          <a class="btn secondary" href="#casos">Ver casos de prueba</a>
           <a class="btn secondary" href="#evidencias">Ver evidencias</a>
-          <a class="btn secondary" href="03-casos-de-prueba.md">Casos de prueba</a>
         </div>
       </div>
       <aside class="panel kpi-panel" aria-label="Indicadores principales del proyecto">
-        <div class="kpi"><strong>26</strong><span>Casos de prueba</span></div>
+        <div class="kpi"><strong>26</strong><span>Casos diseñados</span></div>
+        <div class="kpi"><strong>26</strong><span>Casos ejecutados</span></div>
         <div class="kpi"><strong>10</strong><span>Historias de usuario</span></div>
-        <div class="kpi"><strong>5</strong><span>Épicas</span></div>
-        <div class="kpi"><strong>3</strong><span>Sprints</span></div>
+        <div class="kpi"><strong>3</strong><span>Sprints QA</span></div>
       </aside>
     </div>
   </header>
@@ -44,17 +47,17 @@
         <article>
           <span class="eyebrow">Aplicación bajo prueba</span>
           <strong>NexoTech Store</strong>
-          <p>E-commerce frontend con catálogo, carrito, panel administrador y persistencia en LocalStorage.</p>
+          <p>E-commerce frontend con catálogo, búsqueda, filtros, carrito, panel administrador y persistencia en LocalStorage.</p>
         </article>
         <article>
           <span class="eyebrow">Resultado general</span>
-          <strong>Flujos principales validados</strong>
-          <p>Se documentaron observaciones técnicas asociadas al alcance frontend.</p>
+          <strong>Flujos principales aprobados</strong>
+          <p>Los 26 casos manuales definidos fueron ejecutados con resultado satisfactorio para el alcance evaluado.</p>
         </article>
         <article>
           <span class="eyebrow">Gestión</span>
-          <strong>Jira Scrum</strong>
-          <p>El tablero real puede requerir acceso. Las capturas quedan disponibles en este informe.</p>
+          <strong>Jira Scrum + evidencias públicas</strong>
+          <p>El tablero real puede requerir acceso, por eso las capturas principales están incluidas en esta página.</p>
         </article>
       </div>
     </section>
@@ -66,28 +69,168 @@
           <span class="muted">Testing funcional · Responsive · LocalStorage</span>
         </div>
         <div class="grid cards-3">
-          <article class="card"><h3>Catálogo y navegación</h3><p>Validación de home, productos, búsqueda, filtros, detalle de producto, navegación e imágenes alternativas.</p></article>
-          <article class="card"><h3>Carrito</h3><p>Validación de agregado de productos, modificación de cantidades, eliminación, vaciado y persistencia con LocalStorage.</p></article>
-          <article class="card"><h3>Panel administrador</h3><p>Validación de acceso administrador, alta, edición, eliminación y restauración del catálogo.</p></article>
+          <article class="card"><div class="icon">01</div><h3>Catálogo y navegación</h3><p>Home, cards de productos, búsqueda, filtros por categoría, detalle de producto, navegación entre páginas e imágenes alternativas.</p></article>
+          <article class="card"><div class="icon">02</div><h3>Carrito</h3><p>Agregado de productos, modificación de cantidades, eliminación, vaciado, totales y persistencia del carrito mediante LocalStorage.</p></article>
+          <article class="card"><div class="icon">03</div><h3>Panel administrador</h3><p>Acceso admin, alta, edición, eliminación y restauración del catálogo desde una interfaz de administración frontend.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="documentacion">
+    <section class="section" id="artefactos">
       <div class="container">
         <div class="section-title"><h2>Artefactos QA</h2><span class="status">Documentado</span></div>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Documento</th><th>Contenido</th><th>Archivo</th></tr></thead>
+        <p class="section-lead">La documentación se presenta directamente en esta página para evitar abrir archivos Markdown crudos desde GitHub Pages. Los archivos fuente permanecen en el repositorio como respaldo.</p>
+        <div class="artifact-grid">
+          <article class="artifact-card"><span>01</span><h3>Resumen ejecutivo</h3><p>Objetivo del análisis, alcance evaluado, resultado general y artefactos generados.</p></article>
+          <article class="artifact-card"><span>02</span><h3>Requerimientos</h3><p>Requerimientos funcionales y no funcionales priorizados para la aplicación evaluada.</p></article>
+          <article class="artifact-card"><span>03</span><h3>Plan de pruebas</h3><p>Objetivo, alcance, ambiente, tipos de prueba, riesgos y criterios de entrada/salida.</p></article>
+          <article class="artifact-card"><span>04</span><h3>Casos de prueba</h3><p>26 casos manuales organizados por módulo, pasos principales y resultado esperado.</p></article>
+          <article class="artifact-card"><span>05</span><h3>Ejecución</h3><p>Resultado de ejecución de cada caso y observaciones relevantes del ciclo de prueba.</p></article>
+          <article class="artifact-card"><span>06</span><h3>Métricas y trazabilidad</h3><p>Indicadores QA, cobertura por épica, relación entre historias y casos asociados.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="requerimientos">
+      <div class="container">
+        <div class="section-title"><h2>Requerimientos principales</h2><span class="muted">Funcionales y no funcionales</span></div>
+        <div class="grid cards-2">
+          <article class="panel-list">
+            <h3>Funcionales</h3>
+            <ul class="check-list">
+              <li>Visualizar productos tecnológicos en la página principal.</li>
+              <li>Buscar productos por nombre o descripción.</li>
+              <li>Filtrar productos por categoría.</li>
+              <li>Consultar detalle de producto.</li>
+              <li>Agregar, modificar, eliminar y vaciar productos del carrito.</li>
+              <li>Conservar datos del carrito mediante LocalStorage.</li>
+              <li>Acceder al panel administrador y gestionar productos.</li>
+            </ul>
+          </article>
+          <article class="panel-list">
+            <h3>No funcionales</h3>
+            <ul class="check-list">
+              <li>Diseño responsive adaptable a vista mobile.</li>
+              <li>Claridad visual en botones, cards y formularios.</li>
+              <li>Carga adecuada de recursos en GitHub Pages.</li>
+              <li>Recuperación correcta de datos almacenados localmente.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plan">
+      <div class="container">
+        <div class="section-title"><h2>Plan de pruebas</h2><span class="muted">Estrategia de validación</span></div>
+        <div class="grid cards-3">
+          <article class="card"><h3>Tipos de prueba</h3><p>Funcionales, interfaz, responsive, persistencia, negativas y regresión básica.</p></article>
+          <article class="card"><h3>Ambiente</h3><p>Aplicación publicada en GitHub Pages, navegador Chrome, Windows y gestión del trabajo en Jira Scrum.</p></article>
+          <article class="card"><h3>Fuera de alcance</h3><p>Pasarela de pago real, backend, base de datos, órdenes de compra, seguridad avanzada y pruebas de carga.</p></article>
+        </div>
+        <div class="note"><strong>Objetivo:</strong> validar manualmente los principales flujos funcionales y de interfaz de NexoTech Store, registrando resultados, observaciones y evidencias.</div>
+      </div>
+    </section>
+
+    <section class="section" id="casos">
+      <div class="container">
+        <div class="section-title"><h2>Casos de prueba</h2><span class="status">26 casos · Pass</span></div>
+        <p class="section-lead">Matriz visual de casos manuales. Cada caso incluye módulo, escenario, pasos principales y resultado esperado.</p>
+        <div class="case-toolbar">
+          <span class="pill">Catálogo</span><span class="pill">Búsqueda</span><span class="pill">Filtros</span><span class="pill">Detalle</span><span class="pill">Carrito</span><span class="pill">Admin</span><span class="pill">Responsive</span>
+        </div>
+        <div class="table-wrap polished">
+          <table class="cases-table">
+            <thead><tr><th>ID</th><th>Módulo</th><th>Caso</th><th>Pasos principales</th><th>Resultado esperado</th></tr></thead>
             <tbody>
-              <tr><td>Resumen ejecutivo</td><td>Síntesis del alcance, objetivo y resultado general.</td><td><a href="00-resumen-ejecutivo.md">00-resumen-ejecutivo.md</a></td></tr>
-              <tr><td>Requerimientos</td><td>Requerimientos funcionales y no funcionales.</td><td><a href="01-requerimientos.md">01-requerimientos.md</a></td></tr>
-              <tr><td>Plan de pruebas</td><td>Objetivo, alcance, ambiente, riesgos y criterios.</td><td><a href="02-plan-de-pruebas.md">02-plan-de-pruebas.md</a></td></tr>
-              <tr><td>Casos de prueba</td><td>26 casos funcionales manuales.</td><td><a href="03-casos-de-prueba.md">03-casos-de-prueba.md</a></td></tr>
-              <tr><td>Ejecución</td><td>Resultado de ejecución documentado.</td><td><a href="04-ejecucion.md">04-ejecucion.md</a></td></tr>
-              <tr><td>Observaciones</td><td>Limitaciones y mejoras detectadas.</td><td><a href="05-defectos-observaciones.md">05-defectos-observaciones.md</a></td></tr>
-              <tr><td>Métricas</td><td>Indicadores del ciclo QA.</td><td><a href="06-metricas.md">06-metricas.md</a></td></tr>
-              <tr><td>Trazabilidad</td><td>Relación entre épicas, historias y casos.</td><td><a href="08-trazabilidad.md">08-trazabilidad.md</a></td></tr>
+              <tr><td><strong>CP-001</strong></td><td><span class="module">Catálogo</span></td><td>Validar carga de la página principal</td><td>Ingresar a la URL principal.</td><td>La home carga sin errores visibles.</td></tr>
+              <tr><td><strong>CP-002</strong></td><td><span class="module">Catálogo</span></td><td>Validar visualización del catálogo</td><td>Revisar sección de productos.</td><td>Se muestran tarjetas con imagen, nombre, precio y botón.</td></tr>
+              <tr><td><strong>CP-003</strong></td><td><span class="module">Búsqueda</span></td><td>Buscar producto existente</td><td>Ingresar un producto existente en el buscador.</td><td>Se muestran productos coincidentes.</td></tr>
+              <tr><td><strong>CP-004</strong></td><td><span class="module">Búsqueda</span></td><td>Buscar producto inexistente</td><td>Ingresar texto sin coincidencias.</td><td>Se muestra mensaje de sin resultados.</td></tr>
+              <tr><td><strong>CP-005</strong></td><td><span class="module">Filtros</span></td><td>Filtrar categoría Notebooks</td><td>Seleccionar categoría Notebooks.</td><td>Solo se muestran notebooks.</td></tr>
+              <tr><td><strong>CP-006</strong></td><td><span class="module">Filtros</span></td><td>Filtrar categoría Monitores</td><td>Seleccionar categoría Monitores.</td><td>Solo se muestran monitores.</td></tr>
+              <tr><td><strong>CP-007</strong></td><td><span class="module">Filtros</span></td><td>Filtrar categoría Periféricos</td><td>Seleccionar categoría Periféricos.</td><td>Solo se muestran periféricos.</td></tr>
+              <tr><td><strong>CP-008</strong></td><td><span class="module">Filtros</span></td><td>Filtrar categoría Accesorios</td><td>Seleccionar categoría Accesorios.</td><td>Solo se muestran accesorios.</td></tr>
+              <tr><td><strong>CP-009</strong></td><td><span class="module">Detalle</span></td><td>Acceder al detalle de producto</td><td>Abrir un producto desde una card.</td><td>Se muestra la página de detalle.</td></tr>
+              <tr><td><strong>CP-010</strong></td><td><span class="module">Detalle</span></td><td>Validar información en detalle</td><td>Revisar nombre, precio, descripción e imagen.</td><td>La información coincide con el producto seleccionado.</td></tr>
+              <tr><td><strong>CP-011</strong></td><td><span class="module">Carrito</span></td><td>Agregar producto al carrito desde home</td><td>Presionar Agregar al carrito desde home.</td><td>El producto se agrega al carrito.</td></tr>
+              <tr><td><strong>CP-012</strong></td><td><span class="module">Carrito</span></td><td>Agregar producto al carrito desde detalle</td><td>Presionar Agregar al carrito desde detalle.</td><td>El producto se agrega al carrito.</td></tr>
+              <tr><td><strong>CP-013</strong></td><td><span class="module">Carrito</span></td><td>Aumentar cantidad</td><td>Usar control de aumento.</td><td>La cantidad y total se actualizan.</td></tr>
+              <tr><td><strong>CP-014</strong></td><td><span class="module">Carrito</span></td><td>Disminuir cantidad</td><td>Usar control de disminución.</td><td>La cantidad y total se actualizan.</td></tr>
+              <tr><td><strong>CP-015</strong></td><td><span class="module">Carrito</span></td><td>Eliminar producto</td><td>Presionar eliminar en un producto del carrito.</td><td>El producto se elimina.</td></tr>
+              <tr><td><strong>CP-016</strong></td><td><span class="module">Carrito</span></td><td>Vaciar carrito</td><td>Presionar vaciar carrito.</td><td>El carrito queda vacío.</td></tr>
+              <tr><td><strong>CP-017</strong></td><td><span class="module">Persistencia</span></td><td>Persistencia con LocalStorage</td><td>Agregar producto y recargar página.</td><td>El carrito conserva los datos.</td></tr>
+              <tr><td><strong>CP-018</strong></td><td><span class="module">Admin</span></td><td>Login administrador correcto</td><td>Ingresar credenciales válidas.</td><td>Accede al panel administrador.</td></tr>
+              <tr><td><strong>CP-019</strong></td><td><span class="module">Admin</span></td><td>Login administrador incorrecto</td><td>Ingresar credenciales inválidas.</td><td>No permite el acceso.</td></tr>
+              <tr><td><strong>CP-020</strong></td><td><span class="module">Admin</span></td><td>Crear producto</td><td>Completar formulario de alta.</td><td>El producto aparece en catálogo.</td></tr>
+              <tr><td><strong>CP-021</strong></td><td><span class="module">Admin</span></td><td>Editar producto</td><td>Modificar producto existente.</td><td>Los cambios se reflejan.</td></tr>
+              <tr><td><strong>CP-022</strong></td><td><span class="module">Admin</span></td><td>Eliminar producto</td><td>Eliminar producto desde admin.</td><td>El producto deja de mostrarse.</td></tr>
+              <tr><td><strong>CP-023</strong></td><td><span class="module">Imágenes</span></td><td>Validar imagen alternativa</td><td>Simular imagen inválida.</td><td>Se muestra imagen fallback.</td></tr>
+              <tr><td><strong>CP-024</strong></td><td><span class="module">Navegación</span></td><td>Validar navegación entre páginas</td><td>Usar menú y botones principales.</td><td>La navegación funciona correctamente.</td></tr>
+              <tr><td><strong>CP-025</strong></td><td><span class="module">Admin</span></td><td>Restaurar catálogo</td><td>Presionar restaurar catálogo.</td><td>El catálogo vuelve al estado inicial.</td></tr>
+              <tr><td><strong>CP-026</strong></td><td><span class="module">Responsive</span></td><td>Probar ancho mobile</td><td>Abrir en vista móvil.</td><td>El diseño se adapta correctamente.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ejecucion">
+      <div class="container">
+        <div class="section-title"><h2>Ejecución</h2><span class="status">100% aprobado</span></div>
+        <div class="metrics-grid">
+          <article class="metric-card"><span>26</span><p>Casos ejecutados</p></article>
+          <article class="metric-card"><span>26</span><p>Casos aprobados</p></article>
+          <article class="metric-card"><span>0</span><p>Casos fallidos</p></article>
+          <article class="metric-card"><span>0</span><p>Casos bloqueados</p></article>
+        </div>
+        <div class="result-panel">
+          <div><strong>Resultado general:</strong> la ejecución manual fue satisfactoria para los flujos principales definidos en el alcance.</div>
+          <div><strong>Observación:</strong> las limitaciones registradas corresponden al alcance frontend del proyecto y no bloquean la validación funcional.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="observaciones">
+      <div class="container">
+        <div class="section-title"><h2>Observaciones registradas</h2><span class="muted">Limitaciones conocidas</span></div>
+        <div class="observation-grid">
+          <article class="observation-card"><span class="severity low">Baja</span><h3>OBS-001 · Autenticación administradora simulada</h3><p>La autenticación del panel administrador se realiza del lado del cliente y no valida contra backend.</p></article>
+          <article class="observation-card"><span class="severity medium">Media</span><h3>OBS-002 · Checkout sin generación de orden</h3><p>El flujo de carrito no genera una orden de compra ni integra un checkout real.</p></article>
+          <article class="observation-card"><span class="severity medium">Media</span><h3>OBS-003 · Administración limitada a LocalStorage</h3><p>Los cambios del catálogo quedan asociados al navegador local y no se comparten entre usuarios.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="metricas">
+      <div class="container">
+        <div class="section-title"><h2>Métricas QA</h2><span class="muted">Indicadores del ciclo</span></div>
+        <div class="metrics-board">
+          <div class="meter"><span style="--value:100%"></span><strong>100%</strong><p>Aprobación de casos ejecutados</p></div>
+          <div class="mini-metrics">
+            <div><strong>5</strong><span>Épicas</span></div>
+            <div><strong>10</strong><span>Historias</span></div>
+            <div><strong>26</strong><span>Casos diseñados</span></div>
+            <div><strong>3</strong><span>Observaciones</span></div>
+            <div><strong>3</strong><span>Sprints planificados</span></div>
+            <div><strong>0</strong><span>Bloqueados</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trazabilidad">
+      <div class="container">
+        <div class="section-title"><h2>Matriz de trazabilidad</h2><span class="muted">Cobertura por épica</span></div>
+        <div class="table-wrap polished">
+          <table>
+            <thead><tr><th>Épica</th><th>Historias / tareas</th><th>Casos asociados</th></tr></thead>
+            <tbody>
+              <tr><td>EPIC-01 · Planificación y alcance QA</td><td>QA-001, QA-002, QA-003</td><td>Diseño general de CP-001 a CP-026</td></tr>
+              <tr><td>EPIC-02 · Catálogo, búsqueda y navegación</td><td>US-001 a US-004</td><td>CP-001 a CP-010, CP-023, CP-024</td></tr>
+              <tr><td>EPIC-03 · Carrito y persistencia local</td><td>US-005 a US-008</td><td>CP-011 a CP-017</td></tr>
+              <tr><td>EPIC-04 · Panel administrador</td><td>US-009, US-010</td><td>CP-018 a CP-022, CP-025</td></tr>
+              <tr><td>EPIC-05 · Cierre, métricas y evidencias</td><td>QA-004, QA-005</td><td>CP-026, OBS-001, OBS-002, OBS-003</td></tr>
             </tbody>
           </table>
         </div>
@@ -139,15 +282,10 @@
     <section class="section" id="scrum">
       <div class="container">
         <div class="section-title"><h2>Plan Scrum</h2><span class="muted">3 sprints</span></div>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Sprint</th><th>Objetivo</th><th>Actividades principales</th></tr></thead>
-            <tbody>
-              <tr><td>Sprint 1</td><td>Planificación QA y catálogo.</td><td>QA-001 a QA-003, US-001 a US-004, CP-001 a CP-010, CP-023, CP-024</td></tr>
-              <tr><td>Sprint 2</td><td>Carrito y persistencia local.</td><td>QA-004, US-005 a US-008, CP-011 a CP-017, OBS-002</td></tr>
-              <tr><td>Sprint 3</td><td>Admin, responsive y cierre QA.</td><td>QA-005, US-009, US-010, CP-018 a CP-022, CP-025, CP-026, OBS-001, OBS-003</td></tr>
-            </tbody>
-          </table>
+        <div class="sprint-grid">
+          <article class="sprint-card"><span>Sprint 1</span><h3>Planificación QA y Catálogo</h3><p>Definir alcance, documentar requerimientos, diseñar casos iniciales y validar catálogo, búsqueda, filtros, detalle y navegación.</p><strong>QA-001 a QA-003 · US-001 a US-004 · CP-001 a CP-010 · CP-023 · CP-024</strong></article>
+          <article class="sprint-card"><span>Sprint 2</span><h3>Carrito y Persistencia Local</h3><p>Ejecutar pruebas sobre carrito, cantidades, eliminación, vaciado y persistencia mediante LocalStorage.</p><strong>QA-004 · US-005 a US-008 · CP-011 a CP-017 · OBS-002</strong></article>
+          <article class="sprint-card"><span>Sprint 3</span><h3>Admin, Responsive y Cierre QA</h3><p>Validar panel administrador, operaciones CRUD, responsive, métricas y cierre del ciclo QA.</p><strong>QA-005 · US-009 · US-010 · CP-018 a CP-022 · CP-025 · CP-026 · OBS-001 · OBS-003</strong></article>
         </div>
         <div class="note">
           <strong>Nota:</strong> Jira se utilizó como herramienta de gestión del trabajo QA. El acceso directo al tablero puede requerir permisos; las evidencias principales están disponibles en esta página.
