@@ -1,0 +1,45 @@
+﻿Summary,Issue Type,Description,Priority,Labels,Feature sugerida
+QA-001 - Relevar requerimientos funcionales y no funcionales,Tarea,Revisar el funcionamiento de NexoTech Store y documentar requerimientos funcionales y no funcionales del sistema.,High,"nexotech,qa-manual,documentacion,requerimientos",EPIC-01
+QA-002 - Elaborar plan de pruebas manuales,Tarea,"Definir objetivo, alcance, tipos de prueba, ambiente, criterios de entrada y salida, riesgos y estrategia de ejecucion.",High,"nexotech,qa-manual,plan-pruebas",EPIC-01
+QA-003 - Disenar casos de prueba,Tarea,"Crear casos de prueba manuales para catalogo, busqueda, filtros, detalle, carrito, LocalStorage, admin y responsive.",High,"nexotech,qa-manual,test-cases",EPIC-01
+QA-004 - Ejecutar pruebas funcionales,Tarea,"Ejecutar los casos de prueba definidos y registrar resultado, observaciones y evidencias.",High,"nexotech,qa-manual,ejecucion",EPIC-05
+QA-005 - Consolidar metricas e informe final,Tarea,"Calcular metricas de ejecucion, documentar observaciones y preparar cierre de la validacion QA.",Medium,"nexotech,qa-manual,metricas,informe",EPIC-05
+US-001 - Visualizar productos destacados,Historia,Como visitante quiero visualizar productos destacados para conocer rapidamente el catalogo disponible.,High,"nexotech,qa-manual,user-story,catalogo",EPIC-02
+US-002 - Buscar productos por nombre,Historia,Como usuario quiero buscar productos por nombre para encontrar rapidamente un articulo de interes.,High,"nexotech,qa-manual,user-story,busqueda",EPIC-02
+US-003 - Filtrar productos por categoria,Historia,Como usuario quiero filtrar productos por categoria para navegar el catalogo de forma ordenada.,High,"nexotech,qa-manual,user-story,filtros",EPIC-02
+US-004 - Consultar detalle de producto,Historia,Como usuario quiero ingresar al detalle de un producto para ver informacion ampliada antes de comprar.,High,"nexotech,qa-manual,user-story,detalle",EPIC-02
+US-005 - Agregar productos al carrito,Historia,Como usuario quiero agregar productos al carrito para preparar una compra.,High,"nexotech,qa-manual,user-story,carrito",EPIC-03
+US-006 - Modificar cantidad en el carrito,Historia,Como usuario quiero modificar cantidades para ajustar mi compra antes de finalizar.,Medium,"nexotech,qa-manual,user-story,carrito",EPIC-03
+US-007 - Eliminar productos del carrito,Historia,Como usuario quiero eliminar productos del carrito para corregir mi seleccion.,Medium,"nexotech,qa-manual,user-story,carrito",EPIC-03
+US-008 - Conservar datos del carrito,Historia,Como usuario quiero conservar productos del carrito al recargar la pagina para no perder mi seleccion.,Medium,"nexotech,qa-manual,user-story,localstorage",EPIC-03
+US-009 - Acceder al panel administrador,Historia,Como administrador quiero acceder al panel de administracion para gestionar productos.,High,"nexotech,qa-manual,user-story,admin",EPIC-04
+US-010 - Gestionar productos desde admin,Historia,"Como administrador quiero crear, editar y eliminar productos para mantener actualizado el catalogo.",High,"nexotech,qa-manual,user-story,crud,admin",EPIC-04
+CP-001 - Validar carga de la pagina principal,Tarea,"Verificar que la home cargue correctamente, sin errores visuales y con navegacion principal visible.",High,"nexotech,qa-manual,test-case,home",EPIC-02
+CP-002 - Validar visualizacion del catalogo,Tarea,"Verificar que las tarjetas de productos muestren nombre, precio, categoria, imagen y botones principales.",High,"nexotech,qa-manual,test-case,catalogo",EPIC-02
+CP-003 - Busqueda de producto existente,Tarea,Ingresar un termino existente y verificar que se muestren productos coincidentes.,High,"nexotech,qa-manual,test-case,busqueda",EPIC-02
+CP-004 - Busqueda sin resultados,Tarea,Ingresar un termino inexistente y verificar que el sistema informe que no hay resultados.,Medium,"nexotech,qa-manual,test-case,busqueda",EPIC-02
+CP-005 - Filtrar categoria Notebooks,Tarea,Seleccionar categoria Notebooks y verificar que solo se muestren productos de esa categoria.,High,"nexotech,qa-manual,test-case,filtros",EPIC-02
+CP-006 - Filtrar categoria Monitores,Tarea,Seleccionar categoria Monitores y verificar que solo se muestren productos de esa categoria.,High,"nexotech,qa-manual,test-case,filtros",EPIC-02
+CP-007 - Filtrar categoria Perifericos,Tarea,Seleccionar categoria Perifericos y verificar que solo se muestren productos de esa categoria.,High,"nexotech,qa-manual,test-case,filtros",EPIC-02
+CP-008 - Filtrar categoria Accesorios,Tarea,Seleccionar categoria Accesorios y verificar que solo se muestren productos de esa categoria.,Medium,"nexotech,qa-manual,test-case,filtros",EPIC-02
+CP-009 - Acceder al detalle de producto,Tarea,Presionar ver detalle y verificar que se abra la pagina del producto seleccionado.,High,"nexotech,qa-manual,test-case,detalle",EPIC-02
+CP-010 - Validar informacion en detalle,Tarea,"Verificar que el detalle muestre imagen, nombre, descripcion, precio, categoria y boton de compra.",High,"nexotech,qa-manual,test-case,detalle",EPIC-02
+CP-011 - Agregar producto al carrito desde home,Tarea,Agregar un producto desde la home y verificar que el contador del carrito aumente.,High,"nexotech,qa-manual,test-case,carrito",EPIC-03
+CP-012 - Agregar producto al carrito desde detalle,Tarea,Agregar un producto desde la vista de detalle y verificar que se incorpore al carrito.,High,"nexotech,qa-manual,test-case,carrito",EPIC-03
+CP-013 - Aumentar cantidad en carrito,Tarea,Incrementar la cantidad de un producto y verificar que se actualice subtotal y total.,High,"nexotech,qa-manual,test-case,carrito",EPIC-03
+CP-014 - Disminuir cantidad en carrito,Tarea,Disminuir la cantidad de un producto y verificar que se actualice subtotal y total.,High,"nexotech,qa-manual,test-case,carrito",EPIC-03
+CP-015 - Eliminar producto del carrito,Tarea,Eliminar un producto del carrito y verificar que deje de mostrarse.,High,"nexotech,qa-manual,test-case,carrito",EPIC-03
+CP-016 - Vaciar carrito,Tarea,Vaciar el carrito y verificar que el contador vuelva a cero y no queden productos.,High,"nexotech,qa-manual,test-case,carrito",EPIC-03
+CP-017 - Persistencia del carrito con LocalStorage,Tarea,"Agregar productos, recargar la pagina y verificar que el carrito conserve los datos.",High,"nexotech,qa-manual,test-case,localstorage",EPIC-03
+CP-018 - Login administrador correcto,Tarea,Ingresar credenciales validas y verificar acceso al panel administrador.,Medium,"nexotech,qa-manual,test-case,admin,login",EPIC-04
+CP-019 - Login administrador incorrecto,Tarea,Ingresar credenciales invalidas y verificar que no se permita el acceso.,Medium,"nexotech,qa-manual,test-case,admin,login",EPIC-04
+CP-020 - Admin - Crear producto,Tarea,Crear un producto desde el panel administrador y verificar que aparezca en el catalogo.,High,"nexotech,qa-manual,test-case,admin,crud",EPIC-04
+CP-021 - Admin - Editar producto,Tarea,"Editar nombre, precio o categoria de un producto y verificar que el cambio se refleje.",High,"nexotech,qa-manual,test-case,admin,crud",EPIC-04
+CP-022 - Admin - Eliminar producto,Tarea,Eliminar un producto desde admin y verificar que desaparezca del catalogo.,High,"nexotech,qa-manual,test-case,admin,crud",EPIC-04
+CP-023 - Validar imagen alternativa,Tarea,Forzar o revisar una ruta de imagen invalida y verificar que se muestre una imagen alternativa.,High,"nexotech,qa-manual,test-case,imagenes",EPIC-02
+CP-024 - Validar navegacion entre paginas,Tarea,"Probar enlaces de home, detalle y admin verificando que no existan rutas rotas.",High,"nexotech,qa-manual,test-case,navegacion",EPIC-02
+CP-025 - Admin - Presionar restaurar catalogo,Tarea,Usar la opcion de restaurar catalogo y verificar que se reponga el listado inicial.,Medium,"nexotech,qa-manual,test-case,admin,localstorage",EPIC-04
+CP-026 - Responsive - Probar ancho mobile,Tarea,"Validar visualizacion en resolucion mobile, verificando menu, cards, botones y carrito.",High,"nexotech,qa-manual,test-case,responsive",EPIC-05
+OBS-001 - Autenticacion administradora simulada,Error,El acceso administrador esta simulado en frontend. Se documenta como limitacion tecnica del alcance actual.,Medium,"nexotech,qa-manual,observacion,admin,seguridad",EPIC-04
+OBS-002 - Checkout sin generacion de orden,Error,"El carrito permite gestionar productos, pero no genera una orden de compra real. Se documenta como funcionalidad fuera de alcance.",Low,"nexotech,qa-manual,observacion,checkout",EPIC-03
+OBS-003 - Administracion limitada a LocalStorage,Error,Los cambios del panel administrador se guardan en LocalStorage y no en una base de datos centralizada.,Low,"nexotech,qa-manual,observacion,localstorage",EPIC-04

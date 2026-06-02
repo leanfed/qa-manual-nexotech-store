@@ -1,0 +1,6 @@
+﻿Summary,Issue Type,Description,Priority,Labels
+EPIC-01 - Planificacion y alcance QA,Funcion,"Definicion del alcance, requerimientos, criterios de entrada y salida, y estrategia general de pruebas manuales para NexoTech Store.",High,"nexotech,qa-manual,feature,planificacion"
+"EPIC-02 - Catalogo, busqueda y navegacion",Funcion,"Validacion de la home, listado de productos, busqueda, filtros, detalle de producto y navegacion general.",High,"nexotech,qa-manual,feature,catalogo"
+EPIC-03 - Carrito y persistencia local,Funcion,"Validacion del carrito de compras, calculos, eliminacion de productos y persistencia mediante LocalStorage.",High,"nexotech,qa-manual,feature,carrito"
+EPIC-04 - Panel administrador,Funcion,"Validacion del acceso administrador y operaciones de alta, edicion y eliminacion de productos.",High,"nexotech,qa-manual,feature,admin"
+"EPIC-05 - Cierre, metricas y evidencias",Funcion,"Consolidacion de resultados, observaciones, metricas finales y evidencias de ejecucion QA.",Medium,"nexotech,qa-manual,feature,cierre"
