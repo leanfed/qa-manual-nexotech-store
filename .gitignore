@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+~$*.xlsx
+.env
+node_modules/
