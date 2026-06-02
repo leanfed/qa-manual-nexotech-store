@@ -1,0 +1,19 @@
+﻿ID,Tipo,Requerimiento,Descripcion,Prioridad,Estado
+RF-001,Funcional,Visualizar productos,El usuario debe poder ver productos tecnologicos en la pagina principal.,Alta,Cubierto
+RF-002,Funcional,Buscar productos,El usuario debe poder buscar productos por nombre o descripcion.,Alta,Cubierto
+RF-003,Funcional,Filtrar por categoria,El usuario debe poder filtrar productos por categorias.,Alta,Cubierto
+RF-004,Funcional,Ver detalle,El usuario debe poder acceder al detalle de un producto.,Alta,Cubierto
+RF-005,Funcional,Agregar al carrito,El usuario debe poder agregar productos al carrito desde home o detalle.,Alta,Cubierto
+RF-006,Funcional,Modificar cantidad,El usuario debe poder aumentar o disminuir cantidades en el carrito.,Alta,Cubierto
+RF-007,Funcional,Eliminar producto,El usuario debe poder eliminar productos del carrito.,Alta,Cubierto
+RF-008,Funcional,Vaciar carrito,El usuario debe poder vaciar completamente el carrito.,Media,Cubierto
+RF-009,Funcional,Persistencia local,El carrito debe conservar informacion al recargar la pagina mediante LocalStorage.,Alta,Cubierto
+RF-010,Funcional,Acceder al panel admin,El administrador debe poder ingresar al panel con credenciales definidas.,Alta,Cubierto
+RF-011,Funcional,Crear producto,El administrador debe poder cargar un nuevo producto.,Alta,Cubierto
+RF-012,Funcional,Editar producto,El administrador debe poder modificar los datos de un producto existente.,Alta,Cubierto
+RF-013,Funcional,Eliminar producto admin,El administrador debe poder eliminar productos del catalogo.,Alta,Cubierto
+RF-014,Funcional,Restaurar catalogo,El administrador debe poder restaurar los productos iniciales.,Media,Cubierto
+RNF-001,No funcional,Diseno responsive,La aplicacion debe adaptarse correctamente a pantallas moviles.,Alta,Cubierto
+RNF-002,No funcional,Claridad visual,"Las tarjetas, botones y textos deben ser legibles y consistentes.",Alta,Cubierto
+RNF-003,No funcional,Rendimiento basico,Las imagenes y recursos deben cargar de forma adecuada en GitHub Pages.,Media,Cubierto
+RNF-004,No funcional,Persistencia local,Los datos almacenados localmente deben recuperarse correctamente.,Media,Cubierto
